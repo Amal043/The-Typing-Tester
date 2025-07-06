@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Segoe UI', sans-serif;
-    /*background: linear-gradient(45deg, #1e1e1e, #2b2b2b);*/
     background-image: url(Typebg01.jpg);
     background-size: cover;
     background-position: center;
@@ -34,7 +33,6 @@ body {
 /* Test Container */
 .test-container {
     background: #292f36;
-    /* Dark slate blue-gray */
     padding: 2rem;
     width: 500px;
     max-width: 100%;
@@ -389,66 +387,25 @@ canvas {
 
 @media (max-width: 600px) {
     body {
-        padding: 10px;
-        font-size: 14px;
+        padding: 4px;
     }
-    
     .main-container {
-        gap: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.18);
+        padding: 0;
     }
-    
+    .test-container, .analysis-container, .right-panel {
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.18);
+        padding: 0.7rem 0.2rem;
+    }
     .test-container {
-        padding: 1.5rem;
+        padding: 0.7rem 0.2rem;
     }
-    
-    .test-container h1 {
-        font-size: 1.5rem;
-        line-height: 1.2;
-    }
-    
-    .info {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        gap: 8px;
-    }
-    
-    .info p {
-        min-width: auto;
-        width: 100%;
-        font-size: 0.9rem;
-    }
-    
-    .button {
-        padding: 12px 30px;
-        font-size: 0.9rem;
-        min-height: 48px; /* Larger touch target on mobile */
-    }
-    
-    .paragraph {
-        font-size: 0.9rem;
-        padding: 0.8rem;
-        min-height: 80px;
-        line-height: 1.4;
-    }
-    
-    textarea {
-        font-size: 0.9rem;
-        height: 80px;
-        padding: 12px; /* Larger padding for touch */
-    }
-    
-    .analysis-container {
-        padding: 1rem;
-    }
-    
-    .right-panel {
-        padding: 1rem;
-    }
-    
-    /* Improve chart readability on mobile */
-    canvas {
-        max-height: 250px;
+    .button::before {
+        filter: blur(4px);
+        width: calc(100% + 2px);
+        height: calc(100% + 2px);
     }
 }
 
@@ -500,47 +457,29 @@ canvas {
 
 @media (max-width: 400px) {
     body {
-        padding: 5px;
+        font-size: 13px;
     }
-    
-    .main-container {
-        gap: 10px;
-    }
-    
-    .test-container {
-        padding: 1rem;
-    }
-    
     .test-container h1 {
-        font-size: 1.2rem;
-    }
-    
-    .button {
-        padding: 8px 20px;
-        font-size: 0.8rem;
-    }
-    
-    .paragraph {
-        font-size: 0.8rem;
-        padding: 0.6rem;
-        min-height: 60px;
-    }
-    
-    textarea {
-        font-size: 0.8rem;
-        height: 60px;
-    }
-    
-    .analysis-container {
-        padding: 0.6rem;
-    }
-    
-    .right-panel {
-        padding: 0.6rem;
-    }
-    
-    .right-panel h3 {
         font-size: 1rem;
+    }
+    .button {
+        font-size: 0.95rem;
+        min-height: 44px;
+    }
+    .paragraph, .info p, .right-panel p {
+        font-size: 0.95rem;
+    }
+    textarea {
+        font-size: 0.95rem;
+        min-height: 40px;
+        height: 50px;
+    }
+    .main-container, .test-container, .analysis-container, .right-panel {
+        border-radius: 6px;
+        box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    }
+    .button::before {
+        filter: blur(2px);
     }
 }
 
