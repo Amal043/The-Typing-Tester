@@ -18,7 +18,7 @@ There’s also a pie chart to give you a quick visual overview of your performan
 
 ## 🎬 Live Demo
 
-👉 [Check it out here](https://your-demo-link.com)  
+👉 [Check it out here](https://amal043.github.io/The-Typing-Tester/)  
 
 ---
 
