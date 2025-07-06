@@ -1,0 +1,234 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    /*background: linear-gradient(45deg, #1e1e1e, #2b2b2b);*/
+    background-image: url(Typebg01.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0f0f0;
+}
+
+/* Layout Wrap */
+.main-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* Test Container */
+.test-container {
+    background: #292f36;
+    /* Dark slate blue-gray */
+    padding: 2rem;
+    width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+}
+
+.test-container h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*for left shifting chart we use this */
+.test-container.shift-left {
+    transform: translateX(-50px);
+}
+
+.paragraph {
+    background: #3a3f47;
+    color: #e2e2e2;
+    padding: 1rem;
+    border-radius: 6px;
+    min-height: 100px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* typing area */
+textarea {
+    width: 100%;
+    height: 100px;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #666;
+    background: #23272f;
+    color: #fff;
+    margin-bottom: 1rem;
+    resize: none;
+    transition: none;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    color: #ddd;
+}
+
+.button {
+    padding: 15px 40px;
+    border: none;
+    outline: none;
+    color: #FFF;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    background: #1f1f1f;
+}
+
+.button::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+.button::before {
+    content: "";
+    background: linear-gradient(45deg, red, orange, yellow, green, aqua, blue, rgb(239, 20, 213), red);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+.button:hover::before {
+    opacity: 1;
+}
+
+.button:active::after {
+    background: transparent;
+}
+
+.button:active {
+    color: #000;
+    font-weight: bold;
+}
+
+/* Chart decoration */
+.analysis-container {
+    display: none;
+    background: #23272f;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    align-self: flex-start;
+    margin-top: 120px;
+    color: #333;
+    text-decoration-color: white;
+    margin-right: -200px;
+}
+
+.analysis-container.active {
+    display: block;
+}
+
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+/*Results container */
+.right-panel {
+    position: absolute;
+    right: 40px;
+    top: 100px;
+    width: 200px;
+    background:linear-gradient(45deg, #232529, #282b2e) ;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 380px;
+    margin-top: 200px;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.shift-left {
+    margin-left: -150px;
+    
+}
+
+/* Response */
+@media (max-width: 800px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .analysis-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .test-container.shift-left {
+        transform: none;
+    }
+}
+
+
+/* making butttons responsive */
+@media (max-width: 600px) {
+    .difficulty-selector {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .difficulty-btn {
+        width: 80%;
+        text-align: center;
+    }
+}
