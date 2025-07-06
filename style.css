@@ -28,6 +28,7 @@ body {
     max-width: 1200px;
     width: 100%;
     position: relative;
+    justify-content: center;
 }
 
 /* Test Container */
@@ -41,8 +42,9 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease;
+    transition: all 0.3s ease;
     flex-shrink: 0;
+    z-index: 2;
 }
 
 .test-container h1 {
@@ -82,6 +84,15 @@ textarea {
     margin-bottom: 1rem;
     resize: none;
     transition: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea:focus {
+    outline: 2px solid #4CAF50;
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
 }
 
 .info {
@@ -114,6 +125,20 @@ textarea {
     width: 100%;
     max-width: 300px;
     align-self: center;
+    min-height: 44px; /* Touch-friendly minimum size */
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.button:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+.button:active {
+    transform: scale(0.98);
 }
 
 .button::after {
@@ -176,17 +201,16 @@ textarea {
 .analysis-container {
     display: none;
     background: #23272f;
-    padding: 1rem;
-    width: 300px;
+    padding: 1.5rem;
+    width: 350px;
     max-width: 100%;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     align-self: flex-start;
     margin-top: 120px;
-    color: #333;
-    text-decoration-color: white;
-    margin-right: -200px;
+    color: #fff;
     flex-shrink: 0;
+    z-index: 1;
 }
 
 .analysis-container.active {
@@ -196,20 +220,33 @@ textarea {
 canvas {
     width: 100% !important;
     height: auto !important;
+    max-height: 300px;
 }
+
 /*Results container */
 .right-panel {
     position: absolute;
-    right: 40px;
+    right: 0;
     top: 100px;
-    width: 200px;
+    width: 250px;
     max-width: 100%;
     background: linear-gradient(45deg, #232529, #282b2e);
-    padding: 15px;
+    padding: 1.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-right: 380px;
-    margin-top: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    z-index: 1;
+}
+
+.right-panel h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.right-panel p {
+    margin-bottom: 0.5rem;
+    color: #ddd;
 }
 
 .hidden {
@@ -222,13 +259,32 @@ canvas {
 
 .shift-left {
     margin-left: -150px;
-    
 }
 
 /* Responsive Design */
+@media (max-width: 1400px) {
+    .main-container {
+        gap: 25px;
+        max-width: 1100px;
+    }
+    
+    .test-container {
+        width: 480px;
+    }
+    
+    .analysis-container {
+        width: 320px;
+    }
+    
+    .right-panel {
+        width: 220px;
+    }
+}
+
 @media (max-width: 1200px) {
     .main-container {
         gap: 20px;
+        max-width: 1000px;
     }
     
     .test-container {
@@ -236,18 +292,37 @@ canvas {
     }
     
     .analysis-container {
-        width: 280px;
-        margin-right: -150px;
+        width: 300px;
     }
     
     .right-panel {
-        margin-right: 300px;
+        width: 200px;
     }
 }
 
 @media (max-width: 1000px) {
     .main-container {
         gap: 15px;
+        max-width: 900px;
+    }
+    
+    .test-container {
+        width: 420px;
+    }
+    
+    .analysis-container {
+        width: 280px;
+    }
+    
+    .right-panel {
+        width: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+    .main-container {
+        gap: 15px;
+        max-width: 800px;
     }
     
     .test-container {
@@ -255,18 +330,17 @@ canvas {
     }
     
     .analysis-container {
-        width: 250px;
-        margin-right: -100px;
+        width: 260px;
     }
     
     .right-panel {
-        margin-right: 250px;
+        width: 160px;
     }
 }
 
 @media (max-width: 800px) {
     body {
-        padding: 10px;
+        padding: 15px;
         align-items: flex-start;
         min-height: auto;
     }
@@ -275,6 +349,7 @@ canvas {
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        max-width: 600px;
     }
 
     .test-container {
@@ -282,26 +357,29 @@ canvas {
         max-width: 500px;
         transform: none !important;
         margin-left: 0 !important;
+        order: 1;
     }
 
     .analysis-container {
         width: 100%;
-        max-width: 400px;
-        margin-top: 20px;
+        max-width: 450px;
+        margin-top: 0;
         margin-right: 0;
         align-self: center;
+        order: 2;
     }
 
     .test-container.shift-left {
-        transform: none;
+        transform: none !important;
     }
     
     .right-panel {
         position: static;
         width: 100%;
-        max-width: 400px;
-        margin: 20px 0 0 0;
+        max-width: 450px;
+        margin: 0;
         align-self: center;
+        order: 3;
     }
     
     .shift-left {
@@ -311,7 +389,12 @@ canvas {
 
 @media (max-width: 600px) {
     body {
-        padding: 5px;
+        padding: 10px;
+        font-size: 14px;
+    }
+    
+    .main-container {
+        gap: 15px;
     }
     
     .test-container {
@@ -320,38 +403,66 @@ canvas {
     
     .test-container h1 {
         font-size: 1.5rem;
+        line-height: 1.2;
     }
     
     .info {
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 8px;
     }
     
     .info p {
         min-width: auto;
         width: 100%;
+        font-size: 0.9rem;
     }
     
     .button {
         padding: 12px 30px;
         font-size: 0.9rem;
+        min-height: 48px; /* Larger touch target on mobile */
     }
     
     .paragraph {
         font-size: 0.9rem;
         padding: 0.8rem;
+        min-height: 80px;
+        line-height: 1.4;
     }
     
     textarea {
         font-size: 0.9rem;
         height: 80px;
+        padding: 12px; /* Larger padding for touch */
+    }
+    
+    .analysis-container {
+        padding: 1rem;
+    }
+    
+    .right-panel {
+        padding: 1rem;
+    }
+    
+    /* Improve chart readability on mobile */
+    canvas {
+        max-height: 250px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
+    body {
+        padding: 8px;
+    }
+    
+    .main-container {
+        gap: 12px;
+    }
+    
     .test-container {
-        padding: 1rem;
+        padding: 1.2rem;
     }
     
     .test-container h1 {
@@ -360,16 +471,121 @@ canvas {
     
     .button {
         padding: 10px 25px;
+        font-size: 0.85rem;
+    }
+    
+    .paragraph {
+        font-size: 0.85rem;
+        padding: 0.7rem;
+        min-height: 70px;
+    }
+    
+    textarea {
+        font-size: 0.85rem;
+        height: 70px;
+    }
+    
+    .analysis-container {
+        padding: 0.8rem;
+    }
+    
+    .right-panel {
+        padding: 0.8rem;
+    }
+    
+    .right-panel h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        padding: 5px;
+    }
+    
+    .main-container {
+        gap: 10px;
+    }
+    
+    .test-container {
+        padding: 1rem;
+    }
+    
+    .test-container h1 {
+        font-size: 1.2rem;
+    }
+    
+    .button {
+        padding: 8px 20px;
         font-size: 0.8rem;
     }
     
     .paragraph {
         font-size: 0.8rem;
         padding: 0.6rem;
+        min-height: 60px;
     }
     
     textarea {
         font-size: 0.8rem;
-        height: 70px;
+        height: 60px;
+    }
+    
+    .analysis-container {
+        padding: 0.6rem;
+    }
+    
+    .right-panel {
+        padding: 0.6rem;
+    }
+    
+    .right-panel h3 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        padding: 3px;
+    }
+    
+    .main-container {
+        gap: 8px;
+    }
+    
+    .test-container {
+        padding: 0.8rem;
+    }
+    
+    .test-container h1 {
+        font-size: 1.1rem;
+    }
+    
+    .button {
+        padding: 6px 15px;
+        font-size: 0.75rem;
+    }
+    
+    .paragraph {
+        font-size: 0.75rem;
+        padding: 0.5rem;
+        min-height: 50px;
+    }
+    
+    textarea {
+        font-size: 0.75rem;
+        height: 50px;
+    }
+    
+    .analysis-container {
+        padding: 0.5rem;
+    }
+    
+    .right-panel {
+        padding: 0.5rem;
+    }
+    
+    .right-panel h3 {
+        font-size: 0.9rem;
     }
 }

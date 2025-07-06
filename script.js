@@ -3,39 +3,39 @@ const paragraphs = [
   
   "JavaScript is a versatile language used for web development and beyond. It powers interactive websites and modern applications across the internet. From dynamic content to responsive user interfaces, JavaScript plays a crucial role in building rich user experiences. As browsers evolve, JavaScript continues to expand its capabilities, becoming a core tool for every modern developer.",
   
-  "Typing tests help improve speed and accuracy in a fun and interactive way. The more you type, the more natural it becomes to hit the right keys quickly. Consistency is important—daily practice helps sharpen your reflexes and reduces mistakes. As your confidence grows, you’ll notice improvements in writing, coding, and general communication tasks.",
+  "Typing tests help improve speed and accuracy in a fun and interactive way. The more you type, the more natural it becomes to hit the right keys quickly. Consistency is important—daily practice helps sharpen your reflexes and reduces mistakes. As your confidence grows, you'll notice improvements in writing, coding, and general communication tasks.",
   
-  "The quick brown fox jumps over the lazy dog near the river bank. This sentence contains every letter of the alphabet, making it perfect for practice. Repeating this classic phrase builds familiarity with the entire keyboard layout. It’s a simple yet powerful tool used in typography, font design, and typing drills across generations.",
+  "The quick brown fox jumps over the lazy dog near the river bank. This sentence contains every letter of the alphabet, making it perfect for practice. Repeating this classic phrase builds familiarity with the entire keyboard layout. It's a simple yet powerful tool used in typography, font design, and typing drills across generations.",
   
-  "She sells seashells by the seashore under the summer sun. Though it’s a tongue twister, it helps improve articulation and typing precision. Practicing phrases like these builds rhythm and timing in your finger movements. Plus, they can be a fun way to challenge your muscle memory and accuracy while staying engaged.",
+  "She sells seashells by the seashore under the summer sun. Though it's a tongue twister, it helps improve articulation and typing precision. Practicing phrases like these builds rhythm and timing in your finger movements. Plus, they can be a fun way to challenge your muscle memory and accuracy while staying engaged.",
   
-  "Every great developer you know once wrote terrible code. Learning from mistakes and iterating is part of growing in any skill, especially typing. Don’t be afraid of errors—they're valuable lessons that pave the path to mastery. Whether it's debugging code or correcting typos, persistence always leads to progress.",
+  "Every great developer you know once wrote terrible code. Learning from mistakes and iterating is part of growing in any skill, especially typing. Don't be afraid of errors—they're valuable lessons that pave the path to mastery. Whether it's debugging code or correcting typos, persistence always leads to progress.",
   
-  "Time is the most valuable thing a person can spend wisely. Prioritizing practice and focused effort always leads to meaningful improvements. Rather than rushing, take a moment to slow down and concentrate on your goals. You’ll accomplish more with steady progress than with sporadic bursts of effort.",
+  "Time is the most valuable thing a person can spend wisely. Prioritizing practice and focused effort always leads to meaningful improvements. Rather than rushing, take a moment to slow down and concentrate on your goals. You'll accomplish more with steady progress than with sporadic bursts of effort.",
   
-  "Clean code is not just for computers; it’s for humans too. Readable and well-structured code saves time, prevents bugs, and helps collaboration. Similarly, clear and accurate typing ensures effective communication. The habits you build now will help you write better, whether it's prose or programming.",
+  "Clean code is not just for computers; it's for humans too. Readable and well-structured code saves time, prevents bugs, and helps collaboration. Similarly, clear and accurate typing ensures effective communication. The habits you build now will help you write better, whether it's prose or programming.",
   
-  "Life is what happens when you're busy making other plans. It’s important to pause, reflect, and focus on what really matters—like learning something new. Growth comes when you take small steps daily, even when things don’t go as expected. Skills like typing may seem minor, but they add efficiency and flow to everything else.",
+  "Life is what happens when you're busy making other plans. It's important to pause, reflect, and focus on what really matters—like learning something new. Growth comes when you take small steps daily, even when things don't go as expected. Skills like typing may seem minor, but they add efficiency and flow to everything else.",
   
-  "Always aim for progress, not perfection in your efforts. Even small improvements in typing speed can make a big difference in productivity. Celebrate your wins, learn from your mistakes, and keep going. Over time, the results will speak for themselves, and you’ll be amazed by how far you’ve come.",
+  "Always aim for progress, not perfection in your efforts. Even small improvements in typing speed can make a big difference in productivity. Celebrate your wins, learn from your mistakes, and keep going. Over time, the results will speak for themselves, and you'll be amazed by how far you've come.",
   
-  "Creativity is intelligence having fun with possibilities. Typing faster lets your ideas flow freely onto the page without breaking momentum. Whether you’re writing a story or coding a program, speed and accuracy make expression effortless. They help translate thought into action with fewer barriers and greater joy.",
+  "Creativity is intelligence having fun with possibilities. Typing faster lets your ideas flow freely onto the page without breaking momentum. Whether you're writing a story or coding a program, speed and accuracy make expression effortless. They help translate thought into action with fewer barriers and greater joy.",
   
   "The best way to get started is to quit talking and begin doing. Whether you're coding or typing, action beats intention every time. Planning is useful, but it must be followed by consistent effort. Even five minutes of focused practice each day can lead to remarkable growth over time.",
   
   "A journey of a thousand miles begins with a single step forward. That first keystroke might seem slow, but it's part of the path to mastery. Each session builds on the last, turning effort into skill. With commitment and patience, your typing will become second nature, freeing your mind for deeper work.",
   
-  "Success comes to those who are too busy to look for it. If you focus on your craft, the results will follow naturally with time and effort. Don’t chase perfection—instead, master your process. Typing is just one example of how small improvements compound into significant long-term gains.",
+  "Success comes to those who are too busy to look for it. If you focus on your craft, the results will follow naturally with time and effort. Don't chase perfection—instead, master your process. Typing is just one example of how small improvements compound into significant long-term gains.",
   
   "Reading books expands vocabulary and imagination immensely. Typing out quotes from books can also sharpen your accuracy and rhythm. When you type what you read, you engage both your brain and your hands. This enhances retention, builds fluency, and strengthens the connection between thought and expression.",
   
-  "Don’t watch the clock; do what it does. Keep going forward. Let your fingers flow while your mind focuses on the message, not the minutes. The best progress often happens when you're immersed in the task. Lose yourself in the rhythm of typing, and the results will come naturally.",
+  "Don't watch the clock; do what it does. Keep going forward. Let your fingers flow while your mind focuses on the message, not the minutes. The best progress often happens when you're immersed in the task. Lose yourself in the rhythm of typing, and the results will come naturally.",
   
   "Stay focused and never give up on your goals and dreams. Typing is just one of many skills that grows stronger with dedication and discipline. What begins as a simple exercise can become a foundation for creativity, communication, and confidence across every part of your life.",
   
-  "You miss 100% of the shots you don’t take. Take the risk. Step outside your comfort zone, type a little faster, and challenge yourself today. Growth is uncomfortable at first but rewarding in the long run. Let each mistake be a stepping stone on the road to mastery.",
+  "You miss 100% of the shots you don't take. Take the risk. Step outside your comfort zone, type a little faster, and challenge yourself today. Growth is uncomfortable at first but rewarding in the long run. Let each mistake be a stepping stone on the road to mastery.",
   
-  "Practice typing daily to boost both speed and precision. A simple five-minute routine can enhance your skills and confidence over time. Just like with any habit, consistency builds results. Stick with it, and you’ll soon find that tasks which once took minutes now take seconds.",
+  "Practice typing daily to boost both speed and precision. A simple five-minute routine can enhance your skills and confidence over time. Just like with any habit, consistency builds results. Stick with it, and you'll soon find that tasks which once took minutes now take seconds.",
   
   "A positive mindset leads to positive actions and results. Believing you can improve your typing is the first step toward actually doing it. Confidence grows with every success, no matter how small. Keep your attitude strong, and your skills will naturally follow your belief."
 ];
@@ -105,7 +105,10 @@ function stopTest() {
   document.getElementById("finalWpmDisplay").textContent = finalWpm;
   document.getElementById("finalAccuracyDisplay").textContent = finalAccuracy + "%";
 
-  document.getElementById("testContainer").classList.add("shift-left");
+  // Only apply shift-left on larger screens (desktop layout)
+  if (window.innerWidth > 800) {
+    document.getElementById("testContainer").classList.add("shift-left");
+  }
 
   // hiding pie chart while showing results
   document.getElementById("resultsContainer").classList.remove("hidden");
@@ -188,3 +191,38 @@ function drawChart() {
     }
   });
 }
+
+// Add window resize handler to manage responsive layout
+window.addEventListener('resize', () => {
+  const testContainer = document.getElementById("testContainer");
+  const resultsContainer = document.getElementById("resultsContainer");
+  const analysisContainer = document.getElementById("analysisContainer");
+  
+  // On mobile/tablet, remove shift-left class
+  if (window.innerWidth <= 800) {
+    testContainer.classList.remove("shift-left");
+  }
+  
+  // Ensure proper visibility on resize
+  if (window.innerWidth <= 800) {
+    // On mobile, ensure proper stacking order
+    testContainer.style.order = "1";
+    analysisContainer.style.order = "2";
+    resultsContainer.style.order = "3";
+  }
+});
+
+// Initialize layout on page load
+document.addEventListener('DOMContentLoaded', () => {
+  const testContainer = document.getElementById("testContainer");
+  const resultsContainer = document.getElementById("resultsContainer");
+  const analysisContainer = document.getElementById("analysisContainer");
+  
+  // Set initial layout based on screen size
+  if (window.innerWidth <= 800) {
+    testContainer.classList.remove("shift-left");
+    testContainer.style.order = "1";
+    analysisContainer.style.order = "2";
+    resultsContainer.style.order = "3";
+  }
+});
